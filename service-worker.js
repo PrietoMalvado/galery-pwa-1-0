@@ -12,11 +12,11 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
             return cache.addAll([
-                    '/', //cacheamos la rama principal
-                    '/index.html', //cacheamos el index o main
-                    '/style.css', //cacheamos los estilos
-                    '/script.js',//cacheamos los script
-                    '/manifest.json'//cacheamos el manifest
+                '/galery-pwa-1-0/', 
+                '/galery-pwa-1-0/index.html',
+                '/galery-pwa-1-0/style.css',
+                '/galery-pwa-1-0/script.js',
+                '/galery-pwa-1-0/manifest.json'
             ]);
         })
     );
